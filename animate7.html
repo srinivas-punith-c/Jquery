@@ -1,0 +1,21 @@
+<!Doctype html>
+<html>
+<head>
+
+<title>Stopping animations with the stop() method</title>
+</head>
+
+<body>
+	     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<a href="javascript:void(0);" onclick="$('#divTestArea2').slideDown(5000).slideUp(5000);">Show box</a>
+<a href="javascript:void(0);" onclick="$('#divTestArea2').stop();">Stop</a>
+<a href="javascript:void(0);" onclick="$('#divTestArea2').stop(true, true);">Stop but finish</a>   
+<a href="javascript:void(0);" onclick="$('#divTestArea2').clearQueue().hide();">Reset</a>
+
+<div id="divTestArea2" style="padding:100px; background-color:Green;text-align:center;display:none;">
+<b>Hello World</b>
+</div>
+
+</body>
+
+</html>

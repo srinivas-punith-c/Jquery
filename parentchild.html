@@ -1,0 +1,28 @@
+<!Doctype html>
+<html>
+<head>
+
+<title>Parent/child relation selectors</title>
+
+
+</head>
+<body>
+	     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+ 
+ <div id="divTestArea1">
+    <b>bold text</b>
+	<i>Italic text</i>
+       <div id="divTestArea2">
+           <b>bold text 2</b>
+	        <i>Italic text 2</i>
+	   <div>
+	<b>bold text 3</b>
+       </div>
+</div>
+</div>
+<script type="text/javascript">
+$("#divTestArea1 > b").css("color","red");  // only one child get affected
+$("#divTestArea1  b").css("color","red");  //Remove grater all child get affected
+</script>
+ </body>
+</html>

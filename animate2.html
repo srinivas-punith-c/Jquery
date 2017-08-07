@@ -1,0 +1,40 @@
+<!Doctype html>
+<html>
+<head>
+
+<title>Custom animations with the animate() method</title>
+
+
+</head>
+
+<body>
+	     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+	     <div style="height:60px;">
+        <div id="divTestBox3" style="height: 20px; width: 20px; background-color: #89BC38; position: absolute;"></div>
+
+</div>
+<script type="text/javascript">
+$(function()
+{
+        $("#divTestBox3").animate(
+                { "left" : "100px" }, 
+                1000,
+                function()
+                {
+                        $(this).animate(
+                                { "left" : "20px" },
+                                500,
+                                function()
+                                {
+                                        $(this).animate({ "left" : "50px" }, 500);
+                                }
+                        )
+                }
+        );
+});
+</script>
+
+</body>
+
+</html>

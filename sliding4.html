@@ -1,0 +1,25 @@
+<!Doctype html>
+<html>
+<head>
+
+<title>Sliding elements</title>
+
+
+</head>
+
+<body>
+	     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+<div id="divTestArea3" style="width: 50px; height: 50px; display: none; background-color: #89BC38;"></div>
+<script type="text/javascript">
+$(function()
+{
+        $("#divTestArea3").slideDown(2000, function()
+        {
+                $("#divTestArea3").slideUp(3000);
+        });
+});
+</script>
+</body>
+
+</html>

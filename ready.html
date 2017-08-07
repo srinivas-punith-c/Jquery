@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>The ready event</title>
+
+</head>
+
+
+<body>
+	     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+<div id="divTest1"></div>
+
+<script type="text/javascript">
+
+function DocumentReady() //we create a function, called DocumentReady, which should be fired as soon as the document is ready for DOM manipulation.
+{
+   $("#divTest1").text("Hello World");
+}
+
+$(document).ready(DocumentReady); //we use the ready() method to assign our function to the ready event, to tell jQuery that as soon as the document is ready, we want it to call our function. 
+
+</script>
+
+
+</body>

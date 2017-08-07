@@ -1,0 +1,33 @@
+<!Doctype html>
+<html>
+<head>
+
+<title>Find elements with a specific value for a specific attribute</title>
+
+</head>
+
+
+<body>
+
+	     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		 
+<a href="http://www.google.com" target="_blank">Link 1</a><br />
+<a href="http://www.google.com" target="_self">Link 2</a><br />
+<a href="http://www.google.com" target="_blank">Link 3</a><br />
+
+<script type="text/javascript">
+$(function()
+{
+        $("a[target='_blank']").append(" [new window]"); // New window
+		
+		$("a[target!='_blank']").append(" [same window]"); // Same window
+		
+		
+});
+</script>
+
+
+
+</body>
+
+</html>
